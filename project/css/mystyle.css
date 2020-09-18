@@ -1,0 +1,317 @@
+/*global*/
+
+:root{
+    --primary: rgba(250, 206, 12, 0.911);
+}
+
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Alata', sans-serif;
+}
+
+/*utilities*/
+
+.container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:4rem;
+    margin-top: 1rem;
+}
+
+nav p,.fa-search{
+    display: none;
+}
+
+nav .logo{
+    height: 3rem;
+}
+
+nav .icons i{
+    font-size: 1.6rem;
+    margin-right: 1 rem;
+    padding: .5rem 1rem .5rem 0;
+    border-right: .5px solid #dedede;
+}
+
+nav .icons i:last-child{
+    border: none;
+}
+
+header{
+    background-color: black;
+    color: white;
+    padding: 4rem;
+    
+}
+
+header h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing: 1rem;
+    letter-spacing: .5rem;
+}
+header p{
+    text-align: center;
+    font-size: 2rem;
+}
+
+header p strong{
+    font-weight: 400; 
+    border-bottom: 3px solid var(--primary);
+}
+
+header p strong:hover{
+    background-color: var(--primary);
+    color: black;
+    cursor: pointer;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.line{
+    margin: 3rem 0 5rem 0;
+    text-align: center;
+    width: 5rem;
+    border-bottom: 3px solid var(--primary);
+}
+
+.main-news{
+    position: relative;
+}
+
+.main-news img{
+    width: 100%;
+    height: 40rem;
+}
+
+.main-news text h4{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .5rem;
+}
+
+.main-news .text p{
+    font-size: 3.5rem;
+    color: white;
+    text-align: left;
+}
+
+.text{
+    position: absolute;
+    top: 15rem;
+    left: .5rem;
+    height: 100%;
+    width: 95%;
+}
+
+.text .read-icons{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.text .read-icons i{
+    margin-top: .5rem;
+    font-size: 1.6rem;
+}
+
+.text .read-icons p{
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+
+.main-news:hover{
+    transform: scale(1.05);
+}
+
+/*todays picks*/
+.todays-picks h3{
+    font-size: 2.1rems;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    border-left: 3px solid var(--primary);
+    padding: 2rem;
+}
+
+.flex-container-picks{
+    display: flex;
+    margin-top: 1rem;
+}
+
+div.picks-img{
+    width: 12rem;
+    height: 10rems;
+}
+
+div.picks-img img{
+    width: 100%;
+}
+
+div.picks-text{
+    padding-left: 1.5rem;
+}
+
+div.picks-text h4{
+    font-weight: 300;
+    font-size: 1.4rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+}
+
+div.picks-text p{
+    font-family: 1.4rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* section*/
+
+/*footer*/
+footer{
+    background-color: #dedede;
+
+}
+
+div .footer-main{
+    margin-top: 6rem;
+}
+
+footer h5{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .5rem;
+    border-left: 1px solid black;
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+@media(min-width:768px){
+    .footer-elements{
+        display: flex;
+        justify-content: space-between;
+    }
+    form{
+        display: flex;
+    }
+}
+
+input{
+    display: block;
+    width: 85%;
+    border: none;
+    padding: 1.5rem;
+    font-size:1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #4b4b4b;
+    letter-spacing: .2rem;
+
+}
+
+@media(min-width: 768px){
+    input{
+        width: 25rem;
+        height: 5rem;
+    }
+}
+
+footer button{
+    display: block;
+    width: 85%;
+    border: none;
+    background-color: #4b4b4b;
+    color: white;
+    padding: 1rem;
+    font-size: 1,6rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+@media(min-width: 768px){
+    footer button{
+        width: 15rem;
+        height: ;
+    }
+}
+
+footer button:hover{
+    color:var(--primary);
+    cursor: pointer;
+
+}
+
+footer .icons i{
+    display: inline-block;
+    font-size: 2.1rem;
+    margin-right: 2rem;
+
+}
+
+footer .icons i:hover{
+    color:var(--primary)
+}
+.fa-facebook-f{
+    color: #3b5998
+}
+.fa-twitter{
+    color: #1da1f2;
+}
+
+.fa-flipboard{
+    color:#e12828;
+}
+
+.footer-text{
+    margin-top: 10rem;
+}
+
+
+.footer-text p{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    color: #868686;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+
+}
+
+.footer-text p:last-child{
+    padding-bottom: 5rem;
+}
+
+@media(min-width: 768px){
+    .footer-text{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 3rem;
+    }
+    .footer-text p{
+        margin-right: 8rem;
+        margin-top: 0;
+        margin-bottom: 8rem;
+    }
+}
